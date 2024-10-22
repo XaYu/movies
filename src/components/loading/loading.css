@@ -1,0 +1,60 @@
+.m-loadingParent {
+  position: relative;
+  min-height: 2.625rem;
+}
+
+.m-loading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 101;
+}
+
+.a-loadingShield {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  opacity: 0.8;
+  z-index: 102;
+}
+
+.m-loadingArea {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.m-loadingSpinner {
+  position: absolute;
+  border-radius: 50%;
+  border-color: blue;
+  border-style: solid;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  z-index: 500;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-width: 0.1875rem;
+  animation-name: rotate;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}

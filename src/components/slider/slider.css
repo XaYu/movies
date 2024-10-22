@@ -1,0 +1,9 @@
+.m-slider {
+  padding: 1.5rem;
+}
+
+.m-slider__loading {
+  right: -2rem !important;
+  left: -2rem !important;
+  bottom: -2rem !important;
+}

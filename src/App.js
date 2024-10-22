@@ -1,5 +1,7 @@
 import React from 'react';
-import logo from './logo.svg';
+
+import { AppRouter } from './App.router';
+import logo from './logo.png';
 import './App.css';
 
 function App() {
@@ -7,20 +9,12 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit
-          <code>src/App.js</code>
-          and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <p>Movies and Series by RP</p>
       </header>
+      <AppRouter />
+      <footer className="App-footer">
+        <span>2024 @ Developed by RP</span>
+      </footer>
     </div>
   );
 }
